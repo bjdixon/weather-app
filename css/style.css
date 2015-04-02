@@ -1,0 +1,52 @@
+body {
+    background-color: #955251;
+    color: #231313;
+}
+hr {
+    height: 1px;
+    color: #231313;
+    background: #231313;
+    font-size: 0;
+    border: 0;
+}
+img {
+    vertical-align: middle;
+}
+h1 {
+    color: #fdfcfc;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.3999996185303px;
+}
+h2 {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.3999996185303px;
+}
+p, li {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+a {
+    color: #633736;
+}
+#output {
+    background-color: #b77c7b;
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+.forecast li {
+    list-style-type: none;
+}
+
