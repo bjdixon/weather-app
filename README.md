@@ -1,5 +1,5 @@
-A basic weather app using the openweathermap.com API
-----------------------------------------------------
+Weather app using the OpenWeatherMap API
+----------------------------------------
 
 You can see a live example of this running here: [weather-app](http://bjdixon.github.io/weather-app/)
 
