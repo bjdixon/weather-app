@@ -112,7 +112,10 @@ var weatherApp = (function () {
 
     function getLocation(location) {
         var apiBaseUrl = 'http://api.openweathermap.org/data/2.5/';
-        getJSON(apiBaseUrl + 'find?callback=weatherApp.displayWeather&q=' + location + '&sort=population&cnt=30');
+        getJSON(apiBaseUrl + 'find?callback=weatherApp.displayWeather&q='
+                           + location
+                           + '&APPID=6cba3a4c3d666fe9b486db2c5d8329db'
+                           + '&sort=population&cnt=30');
         persistLocation(location);
         return false;
     }
