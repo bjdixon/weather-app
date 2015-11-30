@@ -10,7 +10,8 @@ var weatherApp = (function () {
         li = htmlTemplate('li'),
         p = htmlTemplate('p'),
         strong = htmlTemplate('strong'),
-        ul = htmlTemplate('ul');
+        ul = htmlTemplate('ul'),
+        auth = '&APPID=6cba3a4c3d666fe9b486db2c5d8329db';
 
     if (typeof recoverLocation() !== 'undefined') {
         getLocation(recoverLocation());
@@ -90,7 +91,7 @@ var weatherApp = (function () {
             ) +
             p(
                 a('Click here for the 5 day weather forecast', [
-                    {name: 'href', value: apiBaseUrl + 'forecast/daily?q=' + location.name + ',' + location.sys.country + '&cnt=5&callback=weatherApp.displayForecast'}, 
+                    {name: 'href', value: apiBaseUrl + 'forecast/daily?q=' + location.name + ',' + location.sys.country + '&cnt=5&callback=weatherApp.displayForecast' + auth}, 
                     {name: 'id', value: location.id}
                 ])
             ) + 
@@ -114,7 +115,7 @@ var weatherApp = (function () {
         var apiBaseUrl = 'http://api.openweathermap.org/data/2.5/';
         getJSON(apiBaseUrl + 'find?callback=weatherApp.displayWeather&q='
                            + location
-                           + '&APPID=6cba3a4c3d666fe9b486db2c5d8329db'
+                           + auth
                            + '&sort=population&cnt=30');
         persistLocation(location);
         return false;
