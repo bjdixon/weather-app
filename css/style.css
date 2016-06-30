@@ -1,11 +1,11 @@
 body {
-    background-color: #955251;
-    color: #231313;
+    background-color: #91a8d0;
+    color: #034f84;
 }
 hr {
     height: 1px;
-    color: #231313;
-    background: #231313;
+    color: #034f84;
+    background: #034f84;
     font-size: 0;
     border: 0;
 }
@@ -27,7 +27,6 @@ h2 {
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 15.3999996185303px;
 }
 p, li {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -38,10 +37,9 @@ p, li {
     line-height: 20px;
 }
 a {
-    color: #633736;
+    color: #fdfcfc;
 }
 #output {
-    background-color: #b77c7b;
     padding: 15px;
     padding-top: 0;
     padding-bottom: 5px;

@@ -28,6 +28,7 @@ var weatherApp = (function () {
 
     function displayForecast(forecast) {
         document.getElementById(forecast.city.id + 'forecast').innerHTML = formatForecast(forecast);
+        document.getElementById(forecast.city.id).innerHTML = strong("Your 5 day weather forecast");
     }
 
     function displayWeather(content) {
