@@ -2,6 +2,10 @@ body {
     background-color: #91a8d0;
     color: #034f84;
 }
+input {
+    font-size: larger;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
 hr {
     height: 1px;
     color: #034f84;
@@ -19,7 +23,7 @@ h1 {
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 26.3999996185303px;
+    line-height: 26px;
 }
 h2 {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
