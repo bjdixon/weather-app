@@ -2,7 +2,7 @@ export const persistLocation = (location) => {
   const date = new Date(),
       thirtyDays = 2592000000;
   date.setTime(date.getTime() + thirtyDays); 
-  document.cookie = 'previousCity' + '=' + location + '; expires=' + date.toUTCString() + '; path=/';
+  document.cookie = `previousCity=${location}; expires=${date.toUTCString()}; path=/`;
 }
 
 export const recoverLocation = () => {
