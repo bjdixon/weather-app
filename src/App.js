@@ -16,7 +16,7 @@ class App extends Component {
     };
   }
   fetchWeatherData(location) {
-    const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast',
+    const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast/daily',
       attrs = {
       appid: '6cba3a4c3d666fe9b486db2c5d8329db',
       units: 'metric',
