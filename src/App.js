@@ -26,7 +26,7 @@ class App extends Component {
     let queryString = '?';
     for (let property in attrs) {
       if (attrs.hasOwnProperty(property)) {
-        queryString += `${property}=${attrs[property]}&`;
+        queryString += `${ property }=${ attrs[property] }&`;
       }
     }
     let _this = this;

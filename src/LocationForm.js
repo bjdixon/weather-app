@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LocationForm.css';
-import {persistLocation, recoverLocation} from './locationPersistence'
+import { persistLocation, recoverLocation } from './locationPersistence'
 
 class LocationForm extends Component {
   constructor(props) {
@@ -18,10 +18,10 @@ class LocationForm extends Component {
   }
   render() {
     return (
-      <form className='FindLocation' onSubmit={this.submitForm}>
-        <input type='text' placeholder={this.state.defaultLocation} ref='city' />
+      <form className='FindLocation' onSubmit={ this.submitForm }>
+        <input type='text' placeholder={ this.state.defaultLocation } ref='city' />
         <button>Go</button>
-        <p>You can enter the name of the city ({this.state.defaultLocation.split(',')[0]}), or the city followed by a two letter country code ({this.state.defaultLocation})</p>
+        <p>You can enter the name of the city ({ this.state.defaultLocation.split(',')[0] }), or the city followed by a two letter country code ({ this.state.defaultLocation })</p>
       </form>
     );
   }
