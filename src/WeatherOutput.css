@@ -1,0 +1,19 @@
+.WeatherOutput {
+  padding: 15px;
+}
+
+.WeatherOutput img {
+  vertical-align: middle;
+}
+
+.WeatherOutput h2 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
+.WeatherOutput strong {
+  color: #fdfcfc;
+}
