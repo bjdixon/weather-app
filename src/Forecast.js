@@ -4,7 +4,6 @@ import './Forecast.css';
 
 class Forecast extends Component {
   render() {
-    console.log(this.props.weather);
     const weather = this.props.weather,
       date = new Date(weather.dt * 1000),
       description = weather.weather[0].description,
@@ -14,10 +13,10 @@ class Forecast extends Component {
       clouds = `${ weather.clouds }%`;
     return (
       <div className="Forecast">
-        <strong>{ date.toDateString() } </strong>,
+        <strong>{ date.toDateString() }, </strong>
         High: { highTemperature },
         Low: { lowTemperature },
-        { description }.
+        <em> { description }. </em>
         Clouds: { clouds }
         <img src={ imgUrl } alt={ description } />
       </div>
