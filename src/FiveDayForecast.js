@@ -17,7 +17,7 @@ class FiveDayForecast extends Component {
   render() {
     let forecasts = [];
     this.props.weather.forEach((forecast) => {
-      forecasts.push(<Forecast weather={ forecast } />);
+      forecasts.push(<Forecast weather={ forecast } key={ forecast.dt } />);
     });
     return (
       <div className="FiveDayForecast">
