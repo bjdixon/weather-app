@@ -1,0 +1,33 @@
+body {
+  background-color: #91a8d0;
+}
+
+.App {
+  padding: 15px;
+  color: #034f84;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.App hr {
+  height: 1px;
+  color: #034f84;
+  background: #034f84;
+  font-size: 0;
+  border: 0;
+}
+
+.App h1 {
+  color: #fdfcfc;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
