@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './WeatherOutput.css';
 import FiveDayForecast from './FiveDayForecast';
+import { persistLocation } from './locationPersistence';
 
 
 class WeatherOutput extends Component {
@@ -12,6 +13,7 @@ class WeatherOutput extends Component {
       lowTemperature = `${ Math.round(todaysWeather.temp.min) }ºC`,
       imgUrl = `http://openweathermap.org/img/w/${ todaysWeather.weather[0].icon }.png`,
       clouds = `${ todaysWeather.clouds }%`;
+      persistLocation(location);
     return (
         <div className='WeatherOutput'>
           <h2>{ location } <img src={ imgUrl } alt={ description } /></h2>
